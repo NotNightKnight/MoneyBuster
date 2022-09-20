@@ -6,11 +6,15 @@ namespace MB
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField]
+        private MoneyUI moneyUI;
+
         private int money = 0;
 
         public void GainMoney(int amount)
         {
             money += amount;
+            moneyUI.SetMoney(money);
         }
     }
 }
