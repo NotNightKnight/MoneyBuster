@@ -24,6 +24,9 @@ namespace MB
         [SerializeField]
         private float magGlassAscend;
 
+        [SerializeField]
+        private float UVLightAscend;
+
         public void AscendObj(string objName)
         {
             switch(objName)
@@ -33,6 +36,9 @@ namespace MB
                     break;
                 case "magnifyingGlass":
                     magnifyingGlassObj.position += new Vector3(0, magGlassAscend, 0);
+                    break;
+                case "UVLight":
+                    UVLightObj.position += new Vector3(0, UVLightAscend, 0);
                     break;
             }
         }

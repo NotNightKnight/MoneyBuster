@@ -14,13 +14,23 @@ namespace MB
         private Transform startPos;
 
         [SerializeField]
-        private GameObject lens;
+        private GameObject moneyDoodle;
+
+        [SerializeField]
+        private GameObject lensUV;
+
+        private void Start()
+        {
+            moneyDoodle.SetActive(false);
+        }
 
         private void OnMouseDown()
         {
             objMover.AscendObj("magnifyingGlass");
 
-            //lens.SetActive(true);
+            moneyDoodle.SetActive(true);
+
+            lensUV.SetActive(false);
         }
 
         private void OnMouseDrag()
@@ -30,9 +40,11 @@ namespace MB
 
         private void OnMouseUp()
         {
-            transform.DOMove(startPos.position, 2f);
+            transform.DOMove(startPos.position, 1.5f);
 
-            //lens.SetActive(false);
+            moneyDoodle.SetActive(false);
+
+            lensUV.SetActive(true);
         }
     }
 }
