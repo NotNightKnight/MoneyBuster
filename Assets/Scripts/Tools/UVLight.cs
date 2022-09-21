@@ -19,8 +19,12 @@ namespace MB
         [SerializeField]
         private GameObject lensMag;
 
+        [SerializeField]
+        private GameObject myLens;
+
         private void Start()
         {
+            myLens.SetActive(false);
             moneyUV.SetActive(false);
         }
 
@@ -31,6 +35,7 @@ namespace MB
             moneyUV.SetActive(true);
 
             lensMag.SetActive(false);
+            myLens.SetActive(true);
         }
 
         private void OnMouseDrag()
@@ -45,6 +50,7 @@ namespace MB
             moneyUV.SetActive(false);
 
             lensMag.SetActive(true);
+            myLens.SetActive(false);
         }
     }
 }

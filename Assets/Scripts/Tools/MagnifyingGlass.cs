@@ -16,8 +16,8 @@ namespace MB
         [SerializeField]
         private GameObject moneyDoodle;
 
-        [SerializeField]
-        private GameObject lensUV;
+        //[SerializeField]
+        //private GameObject lensUV;
 
         private void Start()
         {
@@ -30,7 +30,7 @@ namespace MB
 
             moneyDoodle.SetActive(true);
 
-            lensUV.SetActive(false);
+            //lensUV.SetActive(false);
         }
 
         private void OnMouseDrag()
@@ -44,7 +44,7 @@ namespace MB
 
             moneyDoodle.SetActive(false);
 
-            lensUV.SetActive(true);
+            //lensUV.SetActive(true);
         }
     }
 }

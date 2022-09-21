@@ -637,7 +637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646559523}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.13, y: 0.01, z: 0.732}
+  m_LocalPosition: {x: -0.13, y: 0.01, z: 0.53}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 2941050905863285563}
@@ -781,6 +781,7 @@ MonoBehaviour:
   startPos: {fileID: 1782305505}
   moneyUV: {fileID: 646559523}
   lensMag: {fileID: 236397146}
+  myLens: {fileID: 6879972}
 --- !u!65 &662270514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -802,7 +803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662270512}
   m_LocalRotation: {x: 0.15304585, y: 0.6903456, z: 0.6903456, w: -0.15304585}
-  m_LocalPosition: {x: -2.2, y: 3.076, z: -4.6271243}
+  m_LocalPosition: {x: -1.74, y: 3.05, z: -4.13}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children:
   - {fileID: 6879973}
@@ -1224,7 +1225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &894039306
 Transform:
   m_ObjectHideFlags: 0
@@ -1790,7 +1791,6 @@ MonoBehaviour:
   objMover: {fileID: 241009587}
   startPos: {fileID: 421627655}
   moneyDoodle: {fileID: 894039305}
-  lensUV: {fileID: 6879972}
 --- !u!1 &1022190407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,7 +2161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782305504}
   m_LocalRotation: {x: 0.15304585, y: 0.6903456, z: 0.6903456, w: -0.15304585}
-  m_LocalPosition: {x: -2.2, y: 3.076, z: -4.6271243}
+  m_LocalPosition: {x: -2.2, y: 3.05, z: -4.6271243}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 1189880308}
