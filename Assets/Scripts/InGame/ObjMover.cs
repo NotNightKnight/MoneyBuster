@@ -19,21 +19,27 @@ namespace MB
         private float dragSpeed;
 
         [SerializeField]
-        private float ascendObj;
+        private float moneyAscend;
+
+        [SerializeField]
+        private float magGlassAscend;
 
         public void AscendObj(string objName)
         {
             switch(objName)
             {
                 case "money":
-                    Ascend(moneyObj);
+                    moneyObj.position += new Vector3(0, moneyAscend, 0);
+                    break;
+                case "magnifyingGlass":
+                    magnifyingGlassObj.position += new Vector3(0, magGlassAscend, 0);
                     break;
             }
         }
-        private void Ascend(Transform obj)
-        {
-            obj.position += new Vector3(0, ascendObj, 0);
-        }
+        //private void Ascend(Transform obj)
+        //{
+        //    obj.position += new Vector3(0, ascendObj, 0);
+        //}
 
         public void MoveObj(string objName)
         {
