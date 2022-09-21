@@ -3958,7 +3958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a053f17a87b8f49b777dee62ed3ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1860723217}
   ObjMover: {fileID: 241009587}
   myRigidbody: {fileID: 4723121497121308553}
   startPos: {fileID: 746782900}
