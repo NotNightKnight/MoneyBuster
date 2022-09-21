@@ -9,7 +9,18 @@ namespace MB
         [SerializeField]
         private MoneyUI moneyUI;
 
+        [SerializeField]
+        private CanvasGroup endLevelPanel;
+
         private int money = 0;
+
+        public void EndLevel()
+        {
+            Time.timeScale = 0;
+            endLevelPanel.alpha = 1;
+            endLevelPanel.interactable = true;
+            endLevelPanel.blocksRaycasts = true;
+        }
 
         public void GainMoney(int amount)
         {

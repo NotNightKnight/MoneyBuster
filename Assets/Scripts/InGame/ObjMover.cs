@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace MB
@@ -26,6 +27,9 @@ namespace MB
 
         [SerializeField]
         private float UVLightAscend;
+
+        //private Quaternion rotUV = new Quaternion(-90,205,0,0);
+        //private Quaternion rotMag = new Quaternion(0, 205, 0, 0);
 
         public void AscendObj(string objName)
         {

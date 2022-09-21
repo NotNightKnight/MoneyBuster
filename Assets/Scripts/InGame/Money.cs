@@ -8,6 +8,9 @@ namespace MB
     public class Money : MonoBehaviour
     {
         [SerializeField]
+        private GameManager gameManager;
+
+        [SerializeField]
         private ObjMover ObjMover;
 
         [SerializeField]
@@ -37,6 +40,7 @@ namespace MB
             SetRigidbodyFalse();
 
             transform.DOMove(startPos.position, 1f);
+            transform.rotation = new Quaternion(90,90,0,0);
 
             Invoke(nameof(SetRigidbodyTrue), 1.1f);
         }
@@ -55,6 +59,23 @@ namespace MB
         {
             myRigidbody.detectCollisions = false;
             myRigidbody.useGravity = false;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.CompareTag("Shredder"))
+            {
+                EndLevel();
+            }
+            else if(other.CompareTag("Stack"))
+            {
+                EndLevel();
+            }
+        }
+
+        private void EndLevel()
+        {
+            gameManager.EndLevel();
         }
     }
 }
